@@ -1,13 +1,6 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
 <html>
-	
-<!-- Mirrored from pixelarity.com/items/demos/hyperspace/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Jul 2020 18:40:18 GMT -->
-<head>
+	<head>
 		<title>MIACE Dataset</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -22,9 +15,9 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Home</a></li>
-							<li><a href="#dataset">Dataset</a></li>
-							<!--<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li> -->
+							<li><a href="#dataset">Downloads</a></li>
+							<li><a href="#two">Dataset</a></li>
+							<!--<li><a href="#three">Get in touch</a></li> -->
 						</ul>
 					</nav>
 				</div>
@@ -40,7 +33,7 @@
 							<p>Artificial dataset for testing of segmentation algorithm.<br />
 							Developed on <a href="http://ugivia.uib.es/">UGIVIA</a> by Miquel Miró Nicolau for his Master Thesis.</p>
 							<ul class="actions">
-								<li><a href="#dataset" class="button scrolly">Learn more</a></li>
+								<li><a href="#two" class="button scrolly">Learn more</a></li>
 							</ul>
 						</div>
 					</section>
@@ -87,12 +80,50 @@
 					</section>
 
 				<!-- Two -->
-				<!--
-					<section id="two" class="wrapper style3 fade-up">
+				
+					<section id="two" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
+							<h2>MIACE Dataset</h2>
+							<p>MIACE dataset consists of a set of 2000 synthetic images created especially to test segmentation algorithms. To generate these 2000 images we overlap multiple ellipses. Each image contains a cluster with three ellipses. The use of three ellipses is a good trade-off between complexity and reality. </p>
+							<p>The ellipses of each image are defined by three parameters: the rotation, the feret diameter size and its center position. The values of the parameters are generated randomly by a set of constraints. </p>
+							<p>The first ellipse position is the image center. The location of the other two of the ellipses depends on the position of the first one. These positions are selected to ensure that exists an overlapping area between them. The feret diameter and the rotation of the ellipse are random numbers between well defined ranges.</p>
+							<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Parameter</th>
+													<th>Value</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Maximum feret</td>
+													<td>100 px</td>
+												</tr>
+												<tr>
+													<td>Minimum feret</td>
+													<td>45 px</td>
+												</tr>
+												<tr>
+													<td>Minimum distance between centers</td>
+													<td>45 px</td>
+												</tr>
+												<tr>
+													<td>Maximum distance between centers</td>
+													<td>85 px</td>
+												</tr>
+												<tr>
+													<td>Minimum rotation</td>
+													<td>0º</td>
+												</tr>
+												<tr>
+													<td>Maximum rotation</td>
+													<td>360º</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+							<!--<div class="features">
 								<section>
 									<span class="icon solid major fa-code"></span>
 									<h3>Lorem ipsum amet</h3>
@@ -123,13 +154,12 @@
 									<h3>Aliquam urna dapibus</h3>
 									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
-							</div>
-							<ul class="actions">
+							</div>-->
+							<!--<ul class="actions">
 								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
+							</ul>-->
 						</div>
 					</section>
--->
 				<!-- Three -->
 				<!--
 					<section id="three" class="wrapper style1 fade-up">
@@ -212,5 +242,4 @@
 
 	</body>
 
-<!-- Mirrored from pixelarity.com/items/demos/hyperspace/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Jul 2020 18:40:31 GMT -->
 </html>
